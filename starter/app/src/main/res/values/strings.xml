@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+
+    <!-- Login Fragment -->
+    <string name="email_title">Email</string>
+    <string name="password_title">Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
 </resources>
