@@ -20,6 +20,8 @@ class WelcomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_welcomeFragment_to_instructionsFragment)
         }
 
+        (activity as MainActivity).supportActionBar?.title = getString(R.string.welcome_fragment_title)
+
         return binding.root
     }
 }

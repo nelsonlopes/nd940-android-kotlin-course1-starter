@@ -6,19 +6,23 @@
     <string name="password_title">Password</string>
     <string name="signup">Sign Up</string>
     <string name="signin">Sign In</string>
+    <string name="login_fragment_title">Shoe Store</string>
 
     <!-- Welcome Fragment -->
     <string name="welcome_title">Welcome</string>
     <string name="welcome_message">Welcome message</string>
     <string name="instructions">Go To Instructions</string>
+    <string name="welcome_fragment_title">Welcome</string>
 
     <!-- Instructions Fragment -->
     <string name="instructions_title">Instructions</string>
     <string name="instructions_message">Instructions message</string>
     <string name="shoelist">Go To Shoe List</string>
+    <string name="instructions_fragment_title">Instructions</string>
 
     <!-- Shoe List Fragment -->
     <string name="action_add_shoe">Add Shoe</string>
+    <string name="shoelist_fragment_title">Shoe List</string>
 
     <!-- Shoe Description Fragment -->
     <string name="shoename_title">Shoe Name</string>
@@ -27,4 +31,5 @@
     <string name="description_title">Description</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="shoedetail_fragment_title">Shoe Detail</string>
 </resources>

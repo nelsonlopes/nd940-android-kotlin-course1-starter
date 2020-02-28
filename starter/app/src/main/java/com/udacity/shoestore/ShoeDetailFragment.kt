@@ -24,6 +24,8 @@ class ShoeDetailFragment : Fragment() {
             view.findNavController().navigate(R.id.action_shoeDetailFragment_to_shoeListFragment)
         }
 
+        (activity as MainActivity).supportActionBar?.title = getString(R.string.shoedetail_fragment_title)
+
         return binding.root
     }
 }

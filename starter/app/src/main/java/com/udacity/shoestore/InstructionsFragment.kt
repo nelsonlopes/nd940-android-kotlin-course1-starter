@@ -20,6 +20,8 @@ class InstructionsFragment : Fragment() {
             view.findNavController().navigate(R.id.action_instructionsFragment_to_shoeListFragment)
         }
 
+        (activity as MainActivity).supportActionBar?.title = getString(R.string.instructions_fragment_title)
+
         return binding.root
     }
 }
