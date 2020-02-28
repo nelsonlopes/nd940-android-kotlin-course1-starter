@@ -12,8 +12,11 @@
     <string name="welcome_message">Welcome message</string>
     <string name="instructions">Go To Instructions</string>
 
-    <!--Instructions Fragment -->
+    <!-- Instructions Fragment -->
     <string name="instructions_title">Instructions</string>
     <string name="instructions_message">Instructions message</string>
     <string name="shoelist">Go To Shoe List</string>
+
+    <!-- Shoe List Fragment -->
+    <string name="action_add_shoe">Add Shoe</string>
 </resources>
