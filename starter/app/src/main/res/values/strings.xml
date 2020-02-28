@@ -19,4 +19,12 @@
 
     <!-- Shoe List Fragment -->
     <string name="action_add_shoe">Add Shoe</string>
+
+    <!-- Shoe Description Fragment -->
+    <string name="shoename_title">Shoe Name</string>
+    <string name="company_title">Company</string>
+    <string name="shoesize_title">Shoe Size</string>
+    <string name="description_title">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>
