@@ -7,32 +7,31 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-//import com.udacity.shoestore.databinding.FragmentLoginBinding
-
+import com.udacity.shoestore.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
     
-    /*override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val binding = DataBindingUtil.inflate<FragmentLoginBinding>(inflater,
             R.layout.fragment_login,container,false)
 
-        binding.register_btn.setOnClickListener { view : View ->
+        binding.registerBtn.setOnClickListener { view : View ->
             view.findNavController().navigate(R.id.action_loginFragment_to_welcomeFragment)
         }
 
-        binding.login_btn.setOnClickListener { view : View ->
+        binding.loginBtn.setOnClickListener { view : View ->
             view.findNavController().navigate(R.id.action_loginFragment_to_welcomeFragment)
         }
 
         return binding.root
-    }*/
+    }
 
-    override fun onCreateView(
+    /*override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_login, container, false)
-    }
+    }*/
 }
