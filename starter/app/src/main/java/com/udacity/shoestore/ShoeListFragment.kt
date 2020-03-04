@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.models.MainViewModel
-import com.udacity.shoestore.models.Shoe
 import kotlinx.android.synthetic.main.shoe_item.view.*
 
 class ShoeListFragment : Fragment() {
@@ -30,13 +29,16 @@ class ShoeListFragment : Fragment() {
         (activity as MainActivity).supportActionBar?.title =
             getString(R.string.shoelist_fragment_title)
 
-        val viewmodel: MainViewModel by activityViewModels()
+        val viewModel: MainViewModel by activityViewModels()
 
-        for (item in viewmodel.shoes) {
-            val child: View = getLayoutInflater().inflate(R.layout.shoe_item, null);
-            child.name.text = item.name
-            binding.shoelistLn.addView(child)
-        }
+        // Add observer for shoes
+        viewModel.shoes.observe(viewLifecycleOwner, Observer { shoes ->
+            for (item in shoes) {
+                val child: View = getLayoutInflater().inflate(R.layout.shoe_item, null);
+                child.name.text = item.name
+                binding.shoelistLn.addView(child)
+            }
+        })
 
         return binding.root
     }

@@ -3,6 +3,7 @@ package com.udacity.shoestore
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
         Timber.plant(Timber.DebugTree())
 
         navController = Navigation.findNavController(this,R.id.myNavHostFragment)
-        toolbar = findViewById<Toolbar>(R.id.toolbar)
+        toolbar = findViewById(R.id.toolbar)
 
         setupActionBar()
 
