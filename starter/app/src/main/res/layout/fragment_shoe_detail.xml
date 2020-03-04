@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
     <FrameLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -21,9 +26,10 @@
                 android:text="@string/shoename_title" />
 
             <EditText
-                android:id="@+id/showname_et"
+                android:id="@+id/shoename_et"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@{shoe.name}" />
 
             <TextView
                 android:id="@+id/company_tv"
@@ -34,7 +40,8 @@
             <EditText
                 android:id="@+id/company_et"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@{shoe.company}" /> />
 
             <TextView
                 android:id="@+id/shoesize_tv"
@@ -45,7 +52,8 @@
             <EditText
                 android:id="@+id/showsize_et"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@{Double.toString(shoe.size)}" />
 
             <TextView
                 android:id="@+id/description_tv"
@@ -56,7 +64,8 @@
             <EditText
                 android:id="@+id/description_et"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@{shoe.description}" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
