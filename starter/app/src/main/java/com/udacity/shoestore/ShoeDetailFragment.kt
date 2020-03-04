@@ -35,6 +35,8 @@ class ShoeDetailFragment : Fragment() {
         }
 
         (activity as MainActivity).supportActionBar?.title = getString(R.string.shoedetail_fragment_title)
+        (activity as MainActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        (activity as MainActivity).supportActionBar?.setDisplayShowHomeEnabled(true)
 
         return binding.root
     }

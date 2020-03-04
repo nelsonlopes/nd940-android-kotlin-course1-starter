@@ -54,4 +54,9 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
     ) {
         setupActionBar()
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true;
+    }
 }
