@@ -28,7 +28,7 @@ class ShoeDetailFragment : Fragment() {
 
         binding.saveBtn.setOnClickListener { view : View ->
             viewModel.newShoe(binding.shoenameEt.text.toString(),
-                binding.showsizeEt.text.toString().toDouble(),
+                binding.shoesizeEt.text.toString().toDouble(),
                 binding.companyEt.text.toString(),
                 binding.descriptionEt.text.toString())
             view.findNavController().navigate(R.id.action_shoeDetailFragment_to_shoeListFragment)
